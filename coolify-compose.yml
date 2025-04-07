@@ -103,7 +103,7 @@ services:
       - DATABASE_URL_DIRECT="postgresql://postgres:postgres@op-db:5432/postgres?schema=public"
       - NEXT_PUBLIC_DASHBOARD_URL=${SERVICE_FQDN_OPENPANEL_80}
       - NEXT_PUBLIC_API_URL=${SERVICE_FQDN_OPENPANEL_80}/api
-      - COOKIE_SECRET=${SERVICE_BASE64_SECRET}
+      - COOKIE_SECRET=${SERVICE_PASSWORD_32_SECRET}
 
   op-dashboard:
     image: lindesvard/openpanel-dashboard:latest
@@ -124,7 +124,7 @@ services:
       - DATABASE_URL_DIRECT="postgresql://postgres:postgres@op-db:5432/postgres?schema=public"
       - NEXT_PUBLIC_DASHBOARD_URL=${SERVICE_FQDN_OPENPANEL_80}
       - NEXT_PUBLIC_API_URL=${SERVICE_FQDN_OPENPANEL_80}/api
-      - COOKIE_SECRET=${SERVICE_BASE64_SECRET}
+      - COOKIE_SECRET=${SERVICE_PASSWORD_32_SECRET}
 
   op-worker:
     image: lindesvard/openpanel-worker:latest
@@ -145,7 +145,7 @@ services:
       - DATABASE_URL_DIRECT="postgresql://postgres:postgres@op-db:5432/postgres?schema=public"
       - NEXT_PUBLIC_DASHBOARD_URL=${SERVICE_FQDN_OPENPANEL_80}
       - NEXT_PUBLIC_API_URL=${SERVICE_FQDN_OPENPANEL_80}/api
-      - COOKIE_SECRET=${SERVICE_BASE64_SECRET}
+      - COOKIE_SECRET=${SERVICE_PASSWORD_32_SECRET}
       - OP_WORKER_REPLICAS=${OP_WORKER_REPLICAS}
     deploy:
       mode: replicated
