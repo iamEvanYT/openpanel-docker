@@ -144,5 +144,5 @@ services:
       - DATABASE_URL="postgresql://postgres:postgres@op-db:5432/postgres?schema=public"
       - DATABASE_URL_DIRECT="postgresql://postgres:postgres@op-db:5432/postgres?schema=public"
       - NEXT_PUBLIC_DASHBOARD_URL=${OPENPANEL_HOST}
-      - NEXT_PUBLIC_API_URL=${OPENPANEL_HOST}/api
+      - NEXT_PUBLIC_API_URL=OPENPANEL_HOST_API
       - COOKIE_SECRET=${SERVICE_PASSWORD_32_SECRET}
