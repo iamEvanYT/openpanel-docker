@@ -101,8 +101,8 @@ services:
       - CLICKHOUSE_URL="http://op-ch:8123/openpanel"
       - DATABASE_URL="postgresql://postgres:postgres@op-db:5432/postgres?schema=public"
       - DATABASE_URL_DIRECT="postgresql://postgres:postgres@op-db:5432/postgres?schema=public"
-      - NEXT_PUBLIC_DASHBOARD_URL=${SERVICE_FQDN_OPENPANEL_80}
-      - NEXT_PUBLIC_API_URL=${SERVICE_FQDN_OPENPANEL_80}/api
+      - NEXT_PUBLIC_DASHBOARD_URL=${OPENPANEL_HOST}
+      - NEXT_PUBLIC_API_URL=${OPENPANEL_HOST}/api
       - COOKIE_SECRET=${SERVICE_PASSWORD_32_SECRET}
 
   op-dashboard:
@@ -122,8 +122,8 @@ services:
       - CLICKHOUSE_URL="http://op-ch:8123/openpanel"
       - DATABASE_URL="postgresql://postgres:postgres@op-db:5432/postgres?schema=public"
       - DATABASE_URL_DIRECT="postgresql://postgres:postgres@op-db:5432/postgres?schema=public"
-      - NEXT_PUBLIC_DASHBOARD_URL=${SERVICE_FQDN_OPENPANEL_80}
-      - NEXT_PUBLIC_API_URL=${SERVICE_FQDN_OPENPANEL_80}/api
+      - NEXT_PUBLIC_DASHBOARD_URL=${OPENPANEL_HOST}
+      - NEXT_PUBLIC_API_URL=${OPENPANEL_HOST}/api
       - COOKIE_SECRET=${SERVICE_PASSWORD_32_SECRET}
 
   op-worker:
@@ -143,6 +143,6 @@ services:
       - CLICKHOUSE_URL="http://op-ch:8123/openpanel"
       - DATABASE_URL="postgresql://postgres:postgres@op-db:5432/postgres?schema=public"
       - DATABASE_URL_DIRECT="postgresql://postgres:postgres@op-db:5432/postgres?schema=public"
-      - NEXT_PUBLIC_DASHBOARD_URL=${SERVICE_FQDN_OPENPANEL_80}
-      - NEXT_PUBLIC_API_URL=${SERVICE_FQDN_OPENPANEL_80}/api
+      - NEXT_PUBLIC_DASHBOARD_URL=${OPENPANEL_HOST}
+      - NEXT_PUBLIC_API_URL=${OPENPANEL_HOST}/api
       - COOKIE_SECRET=${SERVICE_PASSWORD_32_SECRET}
