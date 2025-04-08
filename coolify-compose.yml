@@ -4,7 +4,7 @@ services:
     restart: always
     environment:
       - SERVICE_FQDN_OPENPANEL_80
-      - DOMAIN_NAME=${OPENPANEL_HOST}
+      - DOMAIN_NAME=${DOMAIN_NAME}
       - BASIC_AUTH_PASSWORD=${SERVICE_PASSWORD_64_BASICAUTH}
     command: >
       sh -c "
