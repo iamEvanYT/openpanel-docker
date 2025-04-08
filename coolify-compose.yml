@@ -7,6 +7,7 @@ services:
       - DOMAIN_NAME=${OPENPANEL_HOST}
     command: >
       sh -c "
+        apk add --no-cache gettext
         envsubst < /etc/caddy/Caddyfile.template > /etc/caddy/Caddyfile
         caddy run --config /etc/caddy/Caddyfile
       "
