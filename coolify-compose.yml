@@ -98,17 +98,17 @@ services:
       - op-kv
       - op-geo
     environment:
-      - NODE_ENV="production"
-      - SELF_HOSTED="true"
-      - GEO_IP_HOST="http://op-geo:8080"
-      - BATCH_SIZE="5000"
-      - BATCH_INTERVAL="10000"
-      - ALLOW_REGISTRATION="false"
-      - ALLOW_INVITATION="true"
-      - REDIS_URL="redis://op-kv:6379"
-      - CLICKHOUSE_URL="http://op-ch:8123/openpanel"
-      - DATABASE_URL="postgresql://postgres:postgres@op-db:5432/postgres?schema=public"
-      - DATABASE_URL_DIRECT="postgresql://postgres:postgres@op-db:5432/postgres?schema=public"
+      - NODE_ENV=production
+      - SELF_HOSTED=true
+      - GEO_IP_HOST=http://op-geo:8080
+      - BATCH_SIZE=5000
+      - BATCH_INTERVAL=10000
+      - ALLOW_REGISTRATION=false
+      - ALLOW_INVITATION=true
+      - REDIS_URL=redis://op-kv:6379
+      - CLICKHOUSE_URL=http://op-ch:8123/openpanel
+      - DATABASE_URL=postgresql://postgres:postgres@op-db:5432/postgres?schema=public
+      - DATABASE_URL_DIRECT=postgresql://postgres:postgres@op-db:5432/postgres?schema=public
       - NEXT_PUBLIC_DASHBOARD_URL=${OPENPANEL_HOST}
       - NEXT_PUBLIC_API_URL=${OPENPANEL_HOST}/api
       - COOKIE_SECRET=${SERVICE_PASSWORD_32_SECRET}
@@ -119,17 +119,17 @@ services:
     depends_on:
       - op-api
     environment:
-      - NODE_ENV="production"
-      - SELF_HOSTED="true"
-      - GEO_IP_HOST="http://op-geo:8080"
-      - BATCH_SIZE="5000"
-      - BATCH_INTERVAL="10000"
-      - ALLOW_REGISTRATION="false"
-      - ALLOW_INVITATION="true"
-      - REDIS_URL="redis://op-kv:6379"
-      - CLICKHOUSE_URL="http://op-ch:8123/openpanel"
-      - DATABASE_URL="postgresql://postgres:postgres@op-db:5432/postgres?schema=public"
-      - DATABASE_URL_DIRECT="postgresql://postgres:postgres@op-db:5432/postgres?schema=public"
+      - NODE_ENV=production
+      - SELF_HOSTED=true
+      - GEO_IP_HOST=http://op-geo:8080
+      - BATCH_SIZE=5000
+      - BATCH_INTERVAL=10000
+      - ALLOW_REGISTRATION=false
+      - ALLOW_INVITATION=true
+      - REDIS_URL=redis://op-kv:6379
+      - CLICKHOUSE_URL=http://op-ch:8123/openpanel
+      - DATABASE_URL=postgresql://postgres:postgres@op-db:5432/postgres?schema=public
+      - DATABASE_URL_DIRECT=postgresql://postgres:postgres@op-db:5432/postgres?schema=public
       - NEXT_PUBLIC_DASHBOARD_URL=${OPENPANEL_HOST}
       - NEXT_PUBLIC_API_URL=${OPENPANEL_HOST}/api
       - COOKIE_SECRET=${SERVICE_PASSWORD_32_SECRET}
@@ -140,17 +140,17 @@ services:
     depends_on:
       - op-api
     environment:
-      - NODE_ENV="production"
-      - SELF_HOSTED="true"
-      - GEO_IP_HOST="http://op-geo:8080"
-      - BATCH_SIZE="5000"
-      - BATCH_INTERVAL="10000"
-      - ALLOW_REGISTRATION="false"
-      - ALLOW_INVITATION="true"
-      - REDIS_URL="redis://op-kv:6379"
-      - CLICKHOUSE_URL="http://op-ch:8123/openpanel"
-      - DATABASE_URL="postgresql://postgres:postgres@op-db:5432/postgres?schema=public"
-      - DATABASE_URL_DIRECT="postgresql://postgres:postgres@op-db:5432/postgres?schema=public"
+      - NODE_ENV=production
+      - SELF_HOSTED=true
+      - GEO_IP_HOST=http://op-geo:8080
+      - BATCH_SIZE=5000
+      - BATCH_INTERVAL=10000
+      - ALLOW_REGISTRATION=false
+      - ALLOW_INVITATION=true
+      - REDIS_URL=redis://op-kv:6379
+      - CLICKHOUSE_URL=http://op-ch:8123/openpanel
+      - DATABASE_URL=postgresql://postgres:postgres@op-db:5432/postgres?schema=public
+      - DATABASE_URL_DIRECT=postgresql://postgres:postgres@op-db:5432/postgres?schema=public
       - NEXT_PUBLIC_DASHBOARD_URL=${OPENPANEL_HOST}
       - NEXT_PUBLIC_API_URL=${OPENPANEL_HOST_API}
       - COOKIE_SECRET=${SERVICE_PASSWORD_32_SECRET}
