@@ -8,12 +8,12 @@ services:
     command: >
       sh -c "
         envsubst < /etc/caddy/Caddyfile.template > /etc/caddy/Caddyfile
-        caddy run --config /etc/caddy/Caddyfile.template
+        caddy run --config /etc/caddy/Caddyfile
       "
     volumes:
       - op-proxy-data:/data
       - op-proxy-config:/config
-      - ./Caddyfile:/etc/caddy/Caddyfile
+      - ./Caddyfile:/etc/caddy/Caddyfile.template
     depends_on:
       - op-dashboard
       - op-api
